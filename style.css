@@ -17,3 +17,38 @@
   background-color: rgba(0, 0, 0, 0.2); /* Example hover color */
   transition: all 0.3s ease;
 }
+.links {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.links::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjusted for better visibility */
+  width: 0;
+  height: 2px;
+  background-color: rgb(53, 223, 253);
+  transition: width 0.3s ease; /* Define explicit transition */
+}
+
+.links:hover::after {
+  width: 100%;
+  background-color: white;
+
+}
+.links:hover {
+  color:  rgb(53, 223, 253);
+  text-shadow: 0 0 5px rgb(53, 223, 253), 0 0 10px rgb(53, 223, 253);
+  transition: all 0.3s ease; 
+}
+.social-link {
+background-color: #fff5;
+
+}
+.social-link:hover { 
+  color: rgb(53, 223, 253);
+  box-shadow: 0 0 5px rgb(53, 223, 253), 0 0 10px rgb(53, 223, 253);
+}
